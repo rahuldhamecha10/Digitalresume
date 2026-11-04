@@ -7,71 +7,71 @@
    1. CSS VARIABLES & THEMES
    -------------------------------------------------------------------------- */
 :root {
-  /* Light Theme Palette (Clean, Professional, Slate & Royal Blue) */
-  --bg-primary: #F8FAFC;
+  /* Light Theme Palette (Editorial Neutrals & Copper Accent) */
+  --bg-primary: #F5F4F0;
   --bg-surface: #FFFFFF;
-  --bg-surface-elevated: #FFFFFF;
-  --bg-muted: #F1F5F9;
-  --bg-accent-light: #EFF6FF;
-  --bg-accent-subtle: #DBEAFE;
+  --bg-surface-elevated: #FBFAF7;
+  --bg-muted: #ECEBE6;
+  --bg-accent-light: #F4E9E0;
+  --bg-accent-subtle: #E8D0C0;
   
-  --text-primary: #0F172A;
-  --text-secondary: #475569;
-  --text-muted: #64748B;
+  --text-primary: #1D2421;
+  --text-secondary: #59615D;
+  --text-muted: #7A817D;
   --text-inverse: #FFFFFF;
 
-  --accent-primary: #2563EB;      /* Vibrant Royal Blue */
-  --accent-hover: #1D4ED8;
-  --accent-active: #1E40AF;
-  --accent-ring: rgba(37, 99, 235, 0.25);
-  --accent-gradient: linear-gradient(135deg, #2563EB 0%, #1D4ED8 100%);
+  --accent-primary: #A45535;
+  --accent-hover: #813D27;
+  --accent-active: #692F1E;
+  --accent-ring: rgba(164, 85, 53, 0.22);
+  --accent-gradient: linear-gradient(135deg, #A45535 0%, #813D27 100%);
 
-  --border-light: #E2E8F0;
-  --border-subtle: #CBD5E1;
-  --border-accent: #93C5FD;
+  --border-light: #DCDDD8;
+  --border-subtle: #C7CAC5;
+  --border-accent: #C99A83;
 
   --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
   --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
   --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.04);
   --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.04);
 
-  --radius-sm: 6px;
-  --radius-md: 10px;
-  --radius-lg: 16px;
+  --radius-sm: 3px;
+  --radius-md: 5px;
+  --radius-lg: 8px;
   --radius-full: 9999px;
 
   --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
   --transition-normal: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   --transition-slow: 350ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  --container-max-width: 1140px;
-  --nav-height: 72px;
+  --font-family: "Avenir Next", Avenir, "Segoe UI", sans-serif;
+  --container-max-width: 1180px;
+  --nav-height: 76px;
 }
 
 [data-theme="dark"] {
-  /* Dark Theme Palette (Refined Dark Slate & Rich Blue Accent) */
-  --bg-primary: #0B0F19;
-  --bg-surface: #111827;
-  --bg-surface-elevated: #1F2937;
-  --bg-muted: #1E293B;
-  --bg-accent-light: rgba(37, 99, 235, 0.15);
-  --bg-accent-subtle: rgba(37, 99, 235, 0.25);
+  /* Dark Theme Palette (Ink, Graphite & Copper Accent) */
+  --bg-primary: #171B19;
+  --bg-surface: #202522;
+  --bg-surface-elevated: #2A302C;
+  --bg-muted: #29302C;
+  --bg-accent-light: rgba(164, 85, 53, 0.16);
+  --bg-accent-subtle: rgba(164, 85, 53, 0.28);
 
-  --text-primary: #F8FAFC;
-  --text-secondary: #CBD5E1;
-  --text-muted: #94A3B8;
-  --text-inverse: #0B0F19;
+  --text-primary: #F4F2ED;
+  --text-secondary: #C7CCC7;
+  --text-muted: #9BA39D;
+  --text-inverse: #171B19;
 
-  --accent-primary: #3B82F6;
-  --accent-hover: #60A5FA;
-  --accent-active: #93C5FD;
-  --accent-ring: rgba(59, 130, 246, 0.35);
-  --accent-gradient: linear-gradient(135deg, #3B82F6 0%, #1D4ED8 100%);
+  --accent-primary: #D28B69;
+  --accent-hover: #E3A486;
+  --accent-active: #F0B99F;
+  --accent-ring: rgba(210, 139, 105, 0.3);
+  --accent-gradient: linear-gradient(135deg, #B86C4A 0%, #8F4930 100%);
 
-  --border-light: #1F2937;
-  --border-subtle: #374151;
-  --border-accent: #2563EB;
+  --border-light: #343B36;
+  --border-subtle: #4B554E;
+  --border-accent: #87533D;
 
   --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
   --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4);
@@ -1587,7 +1587,289 @@ h1, h2, h3, h4 {
 }
 
 /* --------------------------------------------------------------------------
-   15. PRINT STYLES (Recruiter Print / PDF Export)
+   15. EXECUTIVE PORTFOLIO VISUAL SYSTEM
+   -------------------------------------------------------------------------- */
+body {
+  background-color: var(--bg-primary);
+  letter-spacing: 0;
+}
+
+h1, h2, h3, h4 {
+  letter-spacing: 0;
+}
+
+.navbar {
+  background-color: rgba(245, 244, 240, 0.94);
+  border-bottom-color: var(--border-light);
+}
+
+[data-theme="dark"] .navbar {
+  background-color: rgba(23, 27, 25, 0.94);
+}
+
+.nav-brand-logo {
+  border-radius: 50%;
+  background: var(--text-primary);
+  color: var(--bg-primary);
+  box-shadow: none;
+}
+
+.nav-link {
+  border-radius: 0;
+  padding: 8px 10px;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--accent-primary);
+  background-color: transparent;
+}
+
+.theme-toggle-btn,
+.mobile-toggle-btn {
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.hero-section {
+  padding-top: 84px;
+  padding-bottom: 92px;
+  background: linear-gradient(110deg, var(--bg-primary) 0%, var(--bg-accent-light) 100%);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.hero-name {
+  max-width: 760px;
+  font-size: clamp(2.7rem, 6vw, 5rem);
+  line-height: 1.02;
+  letter-spacing: -0.04em;
+}
+
+.hero-headline {
+  max-width: 680px;
+  color: var(--text-primary);
+  font-size: clamp(1.2rem, 2.4vw, 1.55rem);
+  font-weight: 500;
+}
+
+.hero-positioning {
+  max-width: 600px;
+}
+
+.hero-pill {
+  border-radius: 3px;
+  box-shadow: none;
+  background-color: transparent;
+  padding: 5px 10px;
+}
+
+.hero-pill.status-available {
+  border-color: var(--border-accent);
+  color: var(--accent-primary);
+  background-color: transparent;
+}
+
+.hero-avatar-card {
+  border-radius: 50%;
+  border: 1px solid var(--border-subtle);
+  box-shadow: 12px 12px 0 var(--bg-accent-subtle);
+}
+
+.avatar-edit-hint {
+  border-radius: 0;
+  bottom: 18px;
+  left: 18px;
+  right: 18px;
+}
+
+.hero-stats-bar {
+  border-top: 1px solid var(--border-subtle);
+  border-bottom: 1px solid var(--border-subtle);
+  padding: 18px 0;
+  gap: 0;
+}
+
+.stat-card {
+  border: 0;
+  border-right: 1px solid var(--border-light);
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  padding: 10px 14px;
+}
+
+.stat-card:last-child {
+  border-right: 0;
+}
+
+.stat-card:hover {
+  transform: none;
+  border-color: var(--border-light);
+}
+
+.section-wrapper {
+  padding: 96px 0;
+}
+
+.section-header {
+  text-align: left;
+  margin-bottom: 44px;
+  max-width: 720px;
+}
+
+.section-tag {
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: var(--accent-primary);
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+}
+
+.section-title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  letter-spacing: -0.03em;
+}
+
+.section-subtitle {
+  max-width: 620px;
+  margin: 0;
+}
+
+.about-card,
+.timeline-card,
+.project-card,
+.skill-category-card,
+.cert-card,
+.edu-card,
+.contact-card {
+  border-radius: 6px;
+  box-shadow: none;
+}
+
+.about-card {
+  padding: 40px;
+  border-top: 3px solid var(--accent-primary);
+}
+
+.pillar-item {
+  border-radius: 4px;
+  background-color: var(--bg-primary);
+}
+
+.pillar-icon,
+.leadership-icon,
+.cert-icon-wrapper {
+  border-radius: 50%;
+  background-color: var(--bg-accent-light);
+}
+
+.timeline-card {
+  border-left: 3px solid var(--border-subtle);
+}
+
+.timeline-item.current .timeline-card {
+  border-left-color: var(--accent-primary);
+}
+
+.timeline-card:hover,
+.project-card:hover,
+.skill-category-card:hover,
+.cert-card:hover,
+.edu-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--border-accent);
+  box-shadow: 0 8px 24px rgba(29, 36, 33, 0.06);
+}
+
+.timeline-bullets li::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  top: 0.6em;
+  border-radius: 50%;
+  background-color: var(--accent-primary);
+}
+
+.metrics-highlight-pill,
+.project-category-tag,
+.tool-chip,
+.skill-pill,
+.edu-period-badge,
+.cert-badge {
+  border-radius: 3px;
+}
+
+.metrics-highlight-pill {
+  background-color: var(--bg-accent-light);
+  border-color: var(--border-accent);
+}
+
+.case-label {
+  color: var(--accent-primary);
+}
+
+.case-label::before {
+  content: "";
+  width: 18px;
+  height: 1px;
+  background-color: currentColor;
+}
+
+.outcome-callout {
+  border-radius: 3px;
+  border-left-width: 2px;
+}
+
+.leadership-box {
+  border-radius: 6px;
+  border-color: var(--border-subtle);
+  box-shadow: none;
+}
+
+.contact-card {
+  padding: 56px 40px;
+  border-top: 3px solid var(--accent-primary);
+  text-align: left;
+}
+
+.contact-subtext {
+  margin-left: 0;
+}
+
+.contact-actions-grid {
+  justify-content: flex-start;
+  margin-left: 0;
+}
+
+.contact-btn-email {
+  background: var(--text-primary);
+  box-shadow: none;
+}
+
+.contact-btn-linkedin {
+  background-color: transparent;
+  color: var(--text-primary) !important;
+  border: 1px solid var(--border-subtle);
+  box-shadow: none;
+}
+
+.contact-btn-linkedin:hover {
+  background-color: var(--bg-muted);
+  color: var(--text-primary) !important;
+}
+
+.contact-btn-copy {
+  background-color: transparent;
+}
+
+.footer-badge {
+  border-radius: 3px;
+}
+
+/* --------------------------------------------------------------------------
+   16. PRINT STYLES (Recruiter Print / PDF Export)
    -------------------------------------------------------------------------- */
 @media print {
   body {
